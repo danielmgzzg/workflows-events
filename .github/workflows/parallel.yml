@@ -1,0 +1,19 @@
+name: My CI
+
+on: [push]
+
+jobs:
+
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: echo Step 1
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo Step 2
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo Step 3
